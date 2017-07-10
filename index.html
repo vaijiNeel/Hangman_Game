@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en us">
+<head>
+	<title>Hangman Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+	<div class="container text-center" id="gameDiv">
+		<!-- row1 img -->
+		<div class="row">
+			<div class="col-md-12">
+				<img class="imgHdr" src="assets/images/hangman.jpg" alt="Hangman Game">
+				<!-- src="http://www.slinkyproductions.co.uk/wp-content/uploads/Harry-Potter-Hangman-Title-1-700x231.jpg" -->
+			</div>			
+		</div>
+		<!-- row2 header -->
+		<div class="row">
+			<div class="col-md-12 hdr2">
+				<h2>Hogwarts Houses</h2>
+			</div>
+		</div>
+		<!-- row3 header -->
+		<div class="row">
+			<div class="col-md-12">
+				<h3 id="gameHdr3">Guess Hogwarts House</h3>
+			</div>			
+		</div>
+		<!-- row4 - 2 columns -->
+		<div class="row">
+			<!-- column 1 -->
+			<div class="col-md-6 contentCol1">
+				<img class="imgHogwarts" src="assets/images/hogwarts.jpg" alt="Hogwarts">
+			</div>
+			<!-- column 2 -->
+			<div class="col-md-6 contentCol2">				
+				<div class="row">
+					<div class="col-md-12">
+						<!-- header game start info-->
+						<h5>PRESS ANY KEY TO GET STARTED!</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-12">
+								<!-- header wins-->
+								<h5>WINS</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<!-- wins count -->
+								<p id="winCntId"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-12">
+								<!-- header loses-->
+								<h5>LOSES</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<!-- lose count -->
+								<p id="loseCntId"></p>
+							</div>
+						</div>
+					</div>					
+				</div>				
+				<div class="row">
+					<div class="col-md-12">
+					<!-- header current word -->
+						<h5>CURRENT WORD</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					<!-- display current word -->
+						<p id="curWordId"></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					<!-- header guesses -->
+						<h5>NUMBER OF GUESSES REMAINING</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					<!-- guesses count -->
+						<p id="remainGuessId"></p>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-12">
+					<!-- header guessed words -->
+						<h5>LETTERS ALREADY GUESSED</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					<!-- display lost words -->
+						<p id="lostWrdId"></p>
+					</div>
+				</div>			
+			</div>
+		</div>
+
+	</div>
+	<script type='text/javascript' src="assets/javascript/game.js"></script>
+</body>
+</html>
