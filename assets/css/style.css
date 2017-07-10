@@ -1,5 +1,5 @@
 body {
-	margin-top: 2%;
+	margin-top: 1%;
 }
 
 * {
@@ -27,10 +27,10 @@ body {
 }
 
 @keyframes gameHdr {
-    0%   {background-color: red;}
-    25%  {background-color: maroon;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    20%   {background-color: #DAA520;}
+    45%  {background-color: #008B8B;}    
+    50% {background-color: #C71585;}
+    75%  {background-color: #1E90FF;}
 }
 
 h2 {
@@ -38,12 +38,12 @@ h2 {
 	font-size: 200%;		
 	font-family: "Brush Script Std", "Brush Script MT", cursive;
 	animation-name: gameHdr;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 	font-weight: bold;	
 }
 
-hdr2 {
+.hdr2 {
 	animation-direction:alternate;
 }
 
@@ -51,10 +51,6 @@ hdr2 {
 	letter-spacing: 2px;
 	border: 1px dotted white;
 	padding: 1%;
-}
-
-.contentCol1 {
-	/*padding-bottom: 10%;*/
 }
 
 p {
