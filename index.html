@@ -9,6 +9,12 @@
 </head>
 <body>
 	<div class="container text-center" id="gameDiv">
+		<div class="row">
+			<fb:login-button 
+			  scope="public_profile,email"
+			  onlogin="checkLoginState();">
+			</fb:login-button>
+		</div>
 		<!-- row1 img -->
 		<div class="row">
 			<div class="col-md-12">
@@ -112,5 +118,6 @@
 
 	</div>
 	<script type='text/javascript' src="assets/javascript/game.js"></script>
+	<script type='text/javascript' src="assets/javascript/facebookLogin.js"></script>
 </body>
 </html>
